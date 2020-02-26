@@ -1,0 +1,46 @@
+ <div class="container">
+    <h2 class="text-center">{{ title }}</h2>
+    <div class="row" style="margin-top: 20px;">
+        <div class="col-12 col-md-6 cl-xl-6">
+            <div>
+                <div class="card bg-light">
+                    <article *ngFor="let post of posts" class="card-body mx-auto" style="max-width: 500px;">
+                        <div class="userPost">
+                            <div class="avatar">
+                                <img 
+                                    [src]="post.profilePhoto"
+                                    [alt]="post.title"
+                                >
+                                <span>{{ post.username }}</span>
+                            </div>
+                            <div class="imgPost">
+                                <img 
+                                    [src]="post.photo"
+                                    [alt]="post.title"
+                                >
+                                <span>{{ post.description }}</span>
+                            </div>
+                            <div>
+                                <button class="btn" (click)="clickLike()">
+                                    <i class="material-icons">
+                                        {{ icon }}
+                                    </i>
+                                </button>
+                                <button class="btn">
+                                    <i class="material-icons">
+                                        chat_bubble_outline
+                                    </i>
+                                </button>
+                                <button class="btn">
+                                    <i class="material-icons">
+                                        share
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                    </article>                                                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
