@@ -1,4 +1,4 @@
-# web304-InstagramPosts
+# InstagramPosts
 AngularJS project to display a Replica of Instagram’s mobile feed. The feed has 10 posts. Each post component has
 the following:
 * Post Title
